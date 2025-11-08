@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Stock Heatmap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#221afb',
+              'primary-dark': '#1a14b8',
+              'secondary': '#334155', // Neutral (Slate-700)
+              'positive': '#15803d', // Positive (Green-700)
+              'positive-dark': '#22C55E', // Strong Positive (Green-500)
+              'negative': '#B91C1C', // Negative (Red-700) - Now darker red
+              'negative-dark': '#DC2626', // Strong Negative (Red-600) - Now vibrant red
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-white dark:bg-black transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>

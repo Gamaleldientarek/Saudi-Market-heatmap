@@ -1,0 +1,5 @@
+{
+  "name": "Interactive Stock Heatmap V2",
+  "description": "An interactive heatmap application to visualize stocks, ETFs, or other categories based on market capitalization and percentage change. Users can edit data, import from CSV, and export the visualization as SVG or PNG.",
+  "requestFramePermissions": []
+}
